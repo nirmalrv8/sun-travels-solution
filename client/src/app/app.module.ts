@@ -8,6 +8,7 @@ import { ViewContractComponent } from './view-contract/view-contract.component';
 import { SearchContractComponent } from './search-contract/search-contract.component';
 import { AddContractComponent } from './add-contract/add-contract.component';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

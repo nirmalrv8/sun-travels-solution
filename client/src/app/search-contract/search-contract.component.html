@@ -1,5 +1,3 @@
-<p>search-contract works!</p>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,27 +21,27 @@
     <hr class="my-4">
     <form>
       <div class="form-group">
-        <label for="checkInDate">Check In</label><br/>
-        <input type="date" id="checkInDate">
+        <label>Check In</label><br/>
+        <input type="date" class="form-control col-md-4">
       </div>
       <div class="form-group">
-        <label for="checkOutDate">Check Out</label><br/>
-        <input type="date" id="checkOutDate">
+        <label>Check Out</label><br/>
+        <input type="date" class="form-control col-md-4">
       </div>
       <div class="form-group">
-        <label for="noOfDays">No of days</label><br/>
-        <input type="number" id="noOfDays">
+        <label>No of days</label><br/>
+        <input type="number" class="form-control col-md-4">
       </div>
       <div class="form-group">
-        <label for="noOfAdults">No of Adults</label><br/>
-        <input type="number" id="noOfAdults">
+        <label>No of Adults</label><br/>
+        <input type="number" class="form-control col-md-4">
       </div>
 
       <button type="button" (click)="getDetails()" class="btn btn-success">Search For Rooms</button>
     </form>
   </div>
 
-  <div>
+  <div class="form-inline">
     <div class="form-group mb-2">
       <button routerLink="/search_contract" type="button" class="btn btn-dark">Search Contracts</button>
     </div>

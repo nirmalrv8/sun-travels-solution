@@ -9,12 +9,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rooms")
+@CrossOrigin
 public class RoomController {
 
     @Autowired
     private RoomJpaRepository roomJpaRepo;
 
-    @CrossOrigin
     @GetMapping(value = "/view")
     public List<Rooms> findAll() {
         return roomJpaRepo.findAll();

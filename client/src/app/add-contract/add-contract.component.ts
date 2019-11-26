@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-add-contract',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddContractComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
 
+  addContract(paras: any) {
+    const obs = this.http.post('http://localhost:8080/rooms/load', paras);
+    obs.subscribe((res) => {
+      alert('adding success');
+    });
+  }
 }

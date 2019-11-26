@@ -1,5 +1,3 @@
-<p>add-contract works!</p>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,39 +19,47 @@
     <p class="lead">This is a accommodation booking system which can be used to check prices of hotels
       based on your requirements</p>
     <hr class="my-4">
-    <form>
-      <div class="form-group">
-        <label for="checkInDate">Check In</label><br/>
-        <input type="date" id="checkInDate">
-      </div>
-      <div class="form-group">
-        <label for="checkOutDate">Check Out</label><br/>
-        <input type="date" id="checkOutDate">
-      </div>
-      <div class="form-group">
-        <label for="noOfDays">No of days</label><br/>
-        <input type="number" id="noOfDays">
-      </div>
-      <div class="form-group">
-        <label for="noOfAdults">No of Adults</label><br/>
-        <input type="number" id="noOfAdults">
-      </div>
 
-      <button type="submit" (click)="getDetails()" class="btn btn-success">Search For Rooms</button>
+    <form #contractForm="ngForm">
+
+      {{contractForm.value | json}}
+
+      <div class="form-group">
+        <label>Hotel Id</label><br/>
+        <input type="text" class="form-control col-md-4" name="hotelId" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Hotel Name</label><br/>
+        <input type="text" class="form-control col-md-4" name="hotelName" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Room Type</label><br/>
+        <input type="text" class="form-control col-md-4" name="roomType" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Rate</label><br/>
+        <input type="number" class="form-control col-md-4" name="rate" ngModel>
+      </div>
+      <div class="form-group">
+        <label>Markup</label><br/>
+        <input type="number" class="form-control col-md-4" name="markup" ngModel>
+      </div>
+      <button type="button" (click)="addContract(contractForm.value)" class="btn btn-success">Add Contract</button>
     </form>
+
   </div>
 
-  <form class="form-inline">
+  <div class="form-inline">
     <div class="form-group mb-2">
-      <button routerLink="/search_contract" type="submit" class="btn btn-dark">Search Contracts</button>
+      <button routerLink="/search_contract" type="button" class="btn btn-dark">Search Contracts</button>
     </div>
     <div class="form-group mx-sm-3 mb-2">
-      <button routerLink="/view_contract" type="submit" class="btn btn-dark">View Contracts</button>
+      <button routerLink="/view_contract" type="button" class="btn btn-dark">View Contracts</button>
     </div>
     <div class="form-group mb-2">
-      <button routerLink="/add_contract" type="submit" class="btn btn-dark">Add Contracts</button>
+      <button routerLink="/add_contract" type="button" class="btn btn-dark">Add Contracts</button>
     </div>
-  </form>
+  </div>
 
 </div>
 

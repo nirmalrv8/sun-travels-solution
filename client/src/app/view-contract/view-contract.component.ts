@@ -15,7 +15,6 @@ export class ViewContractComponent implements OnInit {
   ngOnInit() {
     const obs = this.http.get('http://localhost:8080/rooms/view');
     obs.subscribe((response) => {
-      console.log(response);
       this.dataSet = response;
     });
   }
