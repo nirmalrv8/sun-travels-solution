@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-view-contract',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewContractComponent implements OnInit {
 
-  constructor() { }
+  private dataSet: any;
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    const obs = this.http.get('http://localhost:8080/rooms/view');
+    obs.subscribe((response) => {
+      console.log(response);
+      this.dataSet = response;
+    });
   }
 
 }

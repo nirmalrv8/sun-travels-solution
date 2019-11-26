@@ -21,26 +21,28 @@
     <p class="lead">This is a accommodation booking system which can be used to check prices of hotels
       based on your requirements</p>
     <hr class="my-4">
-    <form>
-      <div class="form-group">
-        <label for="checkInDate">Check In</label><br/>
-        <input type="date" id="checkInDate">
-      </div>
-      <div class="form-group">
-        <label for="checkOutDate">Check Out</label><br/>
-        <input type="date" id="checkOutDate">
-      </div>
-      <div class="form-group">
-        <label for="noOfDays">No of days</label><br/>
-        <input type="number" id="noOfDays">
-      </div>
-      <div class="form-group">
-        <label for="noOfAdults">No of Adults</label><br/>
-        <input type="number" id="noOfAdults">
-      </div>
 
-      <button type="submit" (click)="getDetails()" class="btn btn-success">Search For Rooms</button>
-    </form>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>Hotel</th>
+          <th>Room Type</th>
+          <th>Rate</th>
+          <th>Markup</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let data of dataSet">
+        <td>{{data.hotelName}}</td>
+        <td>{{data.roomType}}</td>
+        <td>{{data.rate}}</td>
+        <td>{{data.markup}}</td>
+      </tr>
+      </tbody>
+
+    </table>
+
   </div>
 
   <form class="form-inline">
