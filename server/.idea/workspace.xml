@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8135a66e-3418-40e3-ad55-a616e2d09d93" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../client/src/app/add-contract/add-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/add-contract/add-contract.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/add-contract/add-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/add-contract/add-contract.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/search-contract/search-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/search-contract/search-contract.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/view-contract/view-contract.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/view-contract/view-contract.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/app/view-contract/view-contract.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/app/view-contract/view-contract.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sun_travels/sun_travels/controller/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sun_travels/sun_travels/controller/RoomController.java" afterDir="false" />
-    </list>
+    <list default="true" id="65585298-a7fb-41af-aa58-fcd2c16b9c01" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,17 +19,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1U6apqc1IIvttQ1xdqyRXgfr8IX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
+  <component name="ProjectId" id="1UBUX570feo9gvO4TVntFL4dahQ" />
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.sun_travels.sun_travels.model" />
+      <recent name="com.sun_travels.sun_travels.repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -56,7 +46,7 @@
   <component name="RunManager">
     <configuration name="SunTravelsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sun_travels.sun_travels.SunTravelsApplication" />
-      <module name="server" />
+      <module name="hibernate server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sun_travels.sun_travels.*" />
@@ -78,28 +68,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8135a66e-3418-40e3-ad55-a616e2d09d93" name="Default Changelist" comment="" />
-      <created>1574679687923</created>
+      <changelist id="65585298-a7fb-41af-aa58-fcd2c16b9c01" name="Default Changelist" comment="" />
+      <created>1574829518456</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574679687923</updated>
+      <updated>1574829518456</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 package com.sun_travels.sun_travels.controller;
 
-import com.sun_travels.sun_travels.model.Rooms;
-import com.sun_travels.sun_travels.repository.RoomJpaRepository;
+import com.sun_travels.sun_travels.model.Room;
+import com.sun_travels.sun_travels.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,17 +13,17 @@ import java.util.List;
 public class RoomController {
 
     @Autowired
-    private RoomJpaRepository roomJpaRepo;
+    RoomRepository roomRepository;
 
-    @GetMapping(value = "/view")
-    public List<Rooms> findAll() {
-        return roomJpaRepo.findAll();
+    @GetMapping("/view")
+    public List<Room> getAll() {
+        return roomRepository.findAll();
     }
 
-    @PostMapping(value = "/load")
-    public Rooms load(@RequestBody Rooms rooms) {
-        roomJpaRepo.save(rooms);
-        return rooms;
+    @PostMapping("/load")
+    public Room addRoom(@RequestBody Room room) {
+        roomRepository.save(room);
+        return room;
     }
 
 }
